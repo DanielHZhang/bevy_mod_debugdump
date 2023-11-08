@@ -31,8 +31,8 @@ name = "print_render_graph"
 required-features = ["render_graph"]
 
 [patch.crates-io]
-bevy_ecs = { git = "https://github.com/bevyengine/bevy.git", branch = "main" }
-bevy_app = { git = "https://github.com/bevyengine/bevy.git", branch = "main" }
-bevy_utils = { git = "https://github.com/bevyengine/bevy.git", branch = "main" }
-bevy_render = { git = "https://github.com/bevyengine/bevy.git", branch = "main" }
+bevy_ecs = { git = "https://github.com/bevyengine/bevy.git", branch = "main", package = "bevy_ecs" }
+bevy_app = { git = "https://github.com/bevyengine/bevy.git", branch = "main", package = "bevy_app" }
+bevy_utils = { git = "https://github.com/bevyengine/bevy.git", branch = "main", package = "bevy_utils" }
+bevy_render = { git = "https://github.com/bevyengine/bevy.git", branch = "main", package = "bevy_render" }
 bevy = { git = "https://github.com/bevyengine/bevy.git", branch = "main" }
