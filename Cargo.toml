@@ -15,10 +15,10 @@ default = ["render_graph"]
 render_graph = []
 
 [dependencies]
-bevy_ecs = { version = "0.12" }
-bevy_app = { version = "0.12" }
-bevy_utils = { version = "0.12" }
-bevy_render = { version = "0.12" }
+bevy_ecs = { git = "https://github.com/bevyengine/bevy.git", branch = "main", package = "bevy_ecs" }
+bevy_app = { git = "https://github.com/bevyengine/bevy.git", branch = "main", package = "bevy_app" }
+bevy_utils = { git = "https://github.com/bevyengine/bevy.git", branch = "main", package = "bevy_utils" }
+bevy_render = { git = "https://github.com/bevyengine/bevy.git", branch = "main", package = "bevy_render" }
 pretty-type-name = "1.0"
 petgraph = "0.6"
 once_cell = "1.17"
@@ -31,8 +31,8 @@ name = "print_render_graph"
 required-features = ["render_graph"]
 
 [patch.crates-io]
-bevy_ecs = { git = "https://github.com/bevyengine/bevy.git", branch = "main", package = "bevy_ecs" }
-bevy_app = { git = "https://github.com/bevyengine/bevy.git", branch = "main", package = "bevy_app" }
-bevy_utils = { git = "https://github.com/bevyengine/bevy.git", branch = "main", package = "bevy_utils" }
-bevy_render = { git = "https://github.com/bevyengine/bevy.git", branch = "main", package = "bevy_render" }
+# bevy_ecs = { git = "https://github.com/bevyengine/bevy.git", branch = "main", package = "bevy_ecs" }
+# bevy_app = { git = "https://github.com/bevyengine/bevy.git", branch = "main", package = "bevy_app" }
+# bevy_utils = { git = "https://github.com/bevyengine/bevy.git", branch = "main", package = "bevy_utils" }
+# bevy_render = { git = "https://github.com/bevyengine/bevy.git", branch = "main", package = "bevy_render" }
 bevy = { git = "https://github.com/bevyengine/bevy.git", branch = "main" }
